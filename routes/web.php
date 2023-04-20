@@ -16,11 +16,6 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-
-Route::get('/{path?}', function () {
-    return view('welcome');
-})->where('path', '.*');
-
 Route::get('/storage/backendfiles/{id}/{folder_id}/{filename}', function ($id, $folder_id, $filename) {
     $path = storage_path('app/public/backendfiles/' . $id . '/' . $folder_id. "/" . $filename);
 
@@ -35,3 +30,9 @@ Route::get('/storage/backendfiles/{id}/{folder_id}/{filename}', function ($id, $
 
     return $response;
 });
+
+
+Route::get('/{path?}', function () {
+    return view('welcome');
+})->where('path', '.*');
+
