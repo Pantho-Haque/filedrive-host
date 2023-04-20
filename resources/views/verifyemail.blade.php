@@ -9,7 +9,7 @@
 	<h1>Verify your email</h1>
 	<hr>
 	<p>To confirm the verification</p>
-	<h1><a href="http://127.0.0.1:3000/api/verifypass/{{$token}}">
+	<h1><a href="https://filedrive-21sl.onrender.com/api/verifypass/{{$token}}">
 		Click Here
 	</a></h1>
 </body>
