@@ -56,7 +56,7 @@ class UserSeeder extends Seeder
             'name' => "Pantho Haque",
             'email' => "pantho@gmail.com",
             'password' => Hash::make('pantho'),
-            'profile_pic' => "public/backendfiles/admin/profilepic.jpg",
+            'profile_pic' => "https://filedrive-21sl.onrender.com/storage/backendfiles/admin/profilepic.jpg",
             'used_storage' => 0.0,
             'email_verified_at'=>now(),
             'isAdmin'=>true,

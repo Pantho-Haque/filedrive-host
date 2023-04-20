@@ -16,3 +16,7 @@ php artisan migrate:fresh --force
 echo "Seeding Database..."
 php artisan db:seed --force 
 
+
+echo "Link the storage..."
+php artisan storage:link --force 
+
