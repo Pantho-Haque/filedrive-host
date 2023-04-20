@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+
 Route::get('/{path?}', function () {
     return view('welcome');
 })->where('path', '.*');
