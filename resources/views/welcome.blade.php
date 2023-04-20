@@ -25,7 +25,7 @@
 </head>
 <body>
     <div id="root"></div>
-    <script src="/static/js/main.js"></script>
+    <script src="/static/js/main.017b966c.js"></script>
 </body>
 </html>
  
