@@ -2,8 +2,6 @@
 
 namespace App\Providers;
 
-// next line added for hosting 
-use Illuminate\Routing\UrlGenerator;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,9 +21,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // that if block added for hosting 
-        if (env('APP_ENV') == 'production') {
-            $url->forceScheme('https');
-        }
+        //
     }
 }
