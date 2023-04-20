@@ -11,7 +11,4 @@ echo "Caching routes..."
 php artisan route:cache
 
 echo "Running migrations..."
-php artisan migrate --force --seed
-
-echo "Running server"
-php artisan serve
+php artisan migrate --force
