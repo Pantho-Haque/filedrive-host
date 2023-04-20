@@ -1,0 +1,92 @@
+@import 'filepond/dist/filepond.min.css';
+.oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+.anek {
+    font-family: 'Anek Gurmukhi', sans-serif;
+}
+
+.flat {
+    box-shadow: none !important;
+    outline: none;
+}
+
+.linkPreview:hover {
+    background-color: '#181c28';
+}
+
+.scrolling {
+    overflow-y: auto;
+}
+
+
+/* width */
+
+.scrolling::-webkit-scrollbar {
+    width: 2px;
+    height: 5px;
+}
+
+
+/* Track */
+
+.scrolling::-webkit-scrollbar-track {
+    border-radius: 10px;
+    cursor: move;
+}
+
+
+/* Handle */
+
+.scrolling::-webkit-scrollbar-thumb {
+    background: #88aacd;
+    border-radius: 10px;
+}
+
+
+/* selector options */
+
+
+/* file selector  */
+
+input[type=file]::file-selector-button {
+    background-color: #212735;
+    border: "0px";
+    transition: 1s;
+}
+
+input[type=file]::file-selector-button:hover {
+    background-color: #131720;
+}
+
+
+/* Override the default styles */
+
+.filepond--drop-label {
+    color: #F3F4F6;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* .filepond--panel-root {
+    background-color: #212735;
+    border: 2px solid #97bde4;
+} */
+
+
+/* .filepond--item-panel {
+    background-color: #88aacd;
+} */
+
+.filepond--root,
+.filepond--root .filepond--drop-label {
+    height: 200px;
+    color: #F3F4F6;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #212735;
+    border: 2px solid #97bde4;
+    border-radius: 4px;
+}
