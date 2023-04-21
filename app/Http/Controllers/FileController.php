@@ -175,9 +175,12 @@ class FileController extends Controller
             Storage::delete($url);
             
             $user = auth()->user();
+            $folder= $file->folder;
             $user->number_of_files -=1;
-            $user->used_storage -= $file->file_size; ;
+            $user->used_storage -= $file->file_size;
+            $folder->folder_size -=$file->file_size;
             $user->save();
+            $folder->save();
 
             $file->delete();
             return response()->json(['message' => 'File deleted successfully'], 200);
