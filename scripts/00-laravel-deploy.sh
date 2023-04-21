@@ -19,6 +19,11 @@ php artisan migrate --force
 # php artisan db:seed --force 
 
 
-# echo "Link the storage..."
-# php artisan storage:link --force 
+echo "Link the storage..."
+php artisan storage:link --force 
 
+echo "view the storage/app/public directory ..."
+ls /var/www/html/storage/app/public
+
+echo "view the storage/app/public/backendfiles directory ..."
+ls /var/www/html/storage/app/public/backendfiles
