@@ -25,6 +25,7 @@ use App\Http\Controllers\PasswordResetController;
 //     return $request->user();
 // });
 
+
 Route::post("/register", [UserController::class, 'register']);
 Route::get("/emailverified/{token}", [UserController::class, 'emailverified']);
 Route::post("/login", [UserController::class, 'login']);
@@ -62,7 +63,6 @@ Route::middleware(['auth:sanctum','verified'])->group(function () {
     Route::get('/files/{id?}',[FileController::class, 'index']);
     Route::get('/filesoffolder/{id}',[FileController::class, 'showfiles']);
 });
-
 
 
 // Route::get("/users/{id}", [UserController::class, 'show']);
